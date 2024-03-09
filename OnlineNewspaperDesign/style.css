@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*body {
+    display: grid;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto; 
+    border: 10px rgb(0, 255, 153) solid;
+}*/
+
+body > header {
+    background-color: #046DD5;
+}
+
+body > header > h1 {
+    padding: 20px;
+    padding-bottom: 0px;
+    padding-top: 15px;
+    margin: 0px;
+}
+
+body > header > h1 > a {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+body > header > h2 {
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin: 0px;
+}
+
+body > header > h2 > a {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75em;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+#signup {
+    background-color: #046DD5;
+    padding: 20px;
+    padding-top: 0px;
+    margin: 0px;
+}
+
+#signup a + a::before {
+    content: "|"; 
+    margin-right: 5px; 
+}
+
+#signup > a {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 200;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+#hamburger {
+    display: none;
+}
+
+nav > ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+nav > ul > li > a:hover {
+    color: #2A2F33;
+}
+
+nav > ul > li:nth-child(1) {
+    padding: 1em;
+    list-style-type: none;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    border-top: 5px solid  #E1493E;
+}
+
+nav > ul > li:nth-child(2) {
+    padding: 1em;
+    list-style-type: none;    
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    border-top: 5px solid #8ABA56;
+}
+
+nav > ul > li:nth-child(3) {
+    padding: 1em;
+    list-style-type: none;    
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    border-top: 5px solid #5B4282;
+}
+
+nav > ul > li:nth-child(4) {
+    padding: 1em;
+    list-style-type: none;    
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    border-top: 5px solid #FF8932;
+}
+
+nav > ul > li:nth-child(5) {
+    padding: 1em;
+    list-style-type: none;    
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    border-top: 5px solid #19B6E9;
+}
+
+nav > ul > li:nth-child(6) {
+    padding: 1em;
+    list-style-type: none;    
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    border-top: 5px solid #E84C8B;
+}
+
+aside#related{
+    padding: 1em;
+    background-color: #2A2F33;
+    color: white;
+}
+
+#related a {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 0.85em;
+    text-decoration: none;
+}
+
+#related p {
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+#news > article {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+#news > article > img {
+    width: 100%;
+    height: auto;
+}
+
+#news > article > header > h1 > a {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    text-decoration: none;
+    text-shadow: 4px 4px 5px black; 
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    display: inline-block;
+    padding: 0.5em;
+    width: 200px;
+    height: auto;
+    text-align: left; 
+}
+
+#news p {
+    font-family: 'Lora', serif;
+    text-align: justify;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#news > article > p:nth-child(3)::first-letter {
+    font-size: 30px;
+}
+
+#news > article > footer {
+    background-color: #F4655F;
+    padding: 1em;
+    color: white;
+    text-align: left;
+}
+
+#news > article > footer {
+    background-color: #F4655F;
+    padding: 1em;
+    color: white;
+    text-align: left;
+}
+
+#news > article > footer > a {
+    text-decoration: underline;
+    color: white;
+}
+
+#news > article > footer > span.tags > a {
+    text-decoration: underline;
+    color: white;
+}
+
+#news > article > footer > span.date {
+    background-color: #F4655F;
+    padding: 1em;
+    color: white;
+    text-align: left;
+}
+
+#news > article > footer > a {
+    text-decoration: underline;
+    color: white;
+    content: "comments";
+}
+
+#news > article > footer > a::after {
+    content: " comments";
+    /* Style the comment text (optional) */
+    color: white; /* Example: make the comment text a lighter color */
+
+  }
+
+body > footer {
+    background-color: #2A2F33;
+    padding: 1em;
+    padding-top: 0.1px;
+    padding-bottom: 0.1px;
+    margin-top: 1em;
+    color: white;
+    text-align: left;
+}

@@ -58,12 +58,22 @@
             </div>
         </div>
     
-        <form action="save.php" method="post">
-            <h3>Add a Comment</h3>
-            <input type="text" name="username" placeholder="Your Username"><br>
-            <textarea name="comment" placeholder="Your Comment"></textarea><br>
-            <input type="submit" value="Post Comment">
-        </form>
+        <form>
+         <h3>Your Voice</h3>
+         <label>
+           Title:
+           <input type="text">
+         </label>
+         <label>
+           Comment:
+           <textarea name="comment" rows="6" cols="60"></textarea>  
+         </label>
+         <label>
+           Username:
+           <input type="text">
+         </label>
+         <button type="submit">Send</button>
+       </form>
 
       </main>
 
